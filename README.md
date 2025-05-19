@@ -57,7 +57,97 @@ The proposed dessert-themed web application is designed to facilitate an engagin
 - The platform strictly avoids any content or features that contradict Islamic values and ethics.
 
 ## 4. ERD RELATIONSHIP
+```mermaid
+ erDiagram
+    USERS ||--o{ ORDERS : "places"
+    USERS ||--o{ FEEDBACK : "submits"
+    USERS {
+        int UserID PK
+        varchar Name
+        varchar Email
+        varchar Password
+        varchar Phone_number
+        enum Role
+    }
+    
+    DESSERTS ||--o{ ORDER_ITEMS : "included_in"
+    DESSERTS {
+        int DessertID PK
+        int CategoryID FK
+        varchar Name
+        decimal Price
+        text Description
+        enum Availability_status
+        varchar image
+    }
+    
+    ORDERS ||--|{ ORDER_ITEMS : "contains"
+    ORDERS {
+        int OrderID PK
+        int UserID FK
+        date order_date
+        decimal total_price
+        enum status
+    }
+    
+    ORDER_ITEMS {
+        int OrderID PK,FK
+        int DessertID PK,FK
+        int Quantity
+        decimal Price
+    }
+    
+    FEEDBACK {
+        int FeedbackID PK
+        int UserID FK
+        varchar Name
+        varchar Email
+        varchar Subject
+        text Message
+    }
+```
 ## 5. SEQUENCE DIAGRAM 
+```mermaid
+sequenceDiagram
+    actor User
+    actor Admin
+    participant "Web Browser" as Browser
+    participant "Frontend Interface" as Frontend
+    participant "Backend Server" as Backend
+    participant Database
+
+    %% User Registration & Login
+    User->>Browser: Access Registration/Login
+    Browser->>Frontend: Load Login Page
+    User->>Frontend: Submit Credentials
+    Frontend->>Backend: Send Credentials (API)
+    Backend->>Database: Validate Credentials
+    Database-->>Backend: Auth Result
+    Backend-->>Frontend: Auth Response
+    Frontend-->>Browser: Login Success/Failure
+    Browser-->>User: Display Result
+
+    %% Browsing Desserts
+    User->>Browser: Browse Desserts
+    Browser->>Frontend: Request Dessert Listings
+    Frontend->>Backend: API Request for Desserts
+    Backend->>Database: Fetch Dessert Data
+    Database-->>Backend: Dessert Data
+    Backend-->>Frontend: Send Listings
+    Frontend-->>Browser: Display Desserts
+    Browser-->>User: Show Dessert Catalog
+
+    %% Placing an Order (Simplified)
+    User->>Browser: Select Dessert
+    Browser->>Frontend: Add to Cart
+    Frontend->>Backend: Submit Order
+    Backend->>Database: Verify Inventory
+    Database-->>Backend: Stock Status
+    Backend-->>Frontend: Order Confirmation
+    Frontend-->>Browser: Show Receipt
+    Browser-->>User: Order Complete
+```
+
 ## 6. REFERENCE
 
 
