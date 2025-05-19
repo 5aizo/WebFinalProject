@@ -20,7 +20,6 @@ We have chosen Laravel since it provides a neat MVC design, methods for easy dat
 
 ## 2. OBJECTIVES
 BiteBarakah’s main aim is to provide convenient and Shariah-approved baking and dessert ordering for customers as well as system users. The purpose is to achieve ease in using the site, effective management of orders, and significant communication, adhering to Islamic teachings. BiteBarakah works to ensure that its site is attractive and useful for users, helping meet their expectations and encouraging respect among different cultures.
-
 ## The main objectives are : 
 - BiteBarakah makes it simple for customers to choose from various desserts, learn about each product, sign up, log in and handle their orders using an easy cart and checkout system.
 - To help administrators efficiently manage desserts and orders through BiteBarakah by adding, altering, updating when needed and checking order statuses.
@@ -30,47 +29,36 @@ Ultimately, BiteBarakah seeks to create an enjoyable and trustworthy online spac
 
 ## 3. FEATURES AND FUNCTIONALITIES
 The proposed dessert-themed web application is designed to facilitate an engaging, user-friendly, and Shariah-compliant online dessert ordering experience. This system aims to streamline dessert browsing, ordering, and management for both customers and administrators. The core features and functionalities include the following:
-
 ## ❖ Homepage and User Dashboard
 - The homepage features a visually appealing introduction to the platform, highlighting popular dessert items, categories, and promotional content.
 - Users are provided with intuitive navigation to access various sections such as Dessert Listings, About Us, and Contact.
-
-
 ##  ❖ Dessert Listings and Categories
 - Desserts are organized into specific categories (e.g., Cakes, Cookies, Traditional Malay Desserts, Japanese-Inspired Sweets) to enhance browsing efficiency.
 - Each dessert listing displays essential information including image, name, description, availability status, and price.
-
-
 ##  ❖ User Registration and Authentication
 - New users are required to register to access personalized features such as order tracking and history.
 - Secure login and logout functionality ensures authenticated access to user-specific content and order management.
-
-
 ##  ❖ Order Management (Add to Cart & Checkout)
 - Registered users can add multiple dessert items to a cart and proceed to checkout.
 - A simplified order form allows users to confirm their order and submit relevant information for fulfillment (e.g., name, contact number).
 - Orders are stored and tracked in the system for future reference by both users and administrators.
-
-
 ##  ❖ Admin Management Panel
 - Administrators are granted access to a backend dashboard to manage all desserts in the system.
 - Core functionalities include adding new dessert items, editing existing information, updating availability, and removing products when necessary.
 - Administrators can also view customer orders and update their status (e.g., pending, completed).
-
-
 ##  ❖ Order History Tracking
 - Users can view a complete list of their previously placed orders including order dates, items purchased, total price, and order status.
 - This feature supports transparency and user convenience, encouraging repeat visits.
-
-
 ##  ❖ Contact and Feedback Form
 - A structured form is provided for users to submit inquiries, feedback, or issues regarding their experience or orders.
 - Submissions are directed to the admin panel or email for appropriate follow-up.
-
-
 ##  ❖ Shariah-Compliant Content
 - All desserts featured in the application are guaranteed to be halal and prepared in accordance with Islamic dietary laws.
 - The platform strictly avoids any content or features that contradict Islamic values and ethics.
+
+## 4. ERD RELATIONSHIP
+## 5. SEQUENCE DIAGRAM 
+## 6. REFERENCE
 
 
 
