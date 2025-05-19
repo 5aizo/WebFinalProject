@@ -111,41 +111,67 @@ The proposed dessert-themed web application is designed to facilitate an engagin
 sequenceDiagram
     actor User
     actor Admin
-    participant "Web Browser" as Browser
-    participant "Frontend Interface" as Frontend
-    participant "Backend Server" as Backend
+    participant Web Browser
+    participant Frontend Interface
+    participant Backend Server
     participant Database
 
-    %% User Registration & Login
-    User->>Browser: Access Registration/Login
-    Browser->>Frontend: Load Login Page
-    User->>Frontend: Submit Credentials
-    Frontend->>Backend: Send Credentials (API)
-    Backend->>Database: Validate Credentials
-    Database-->>Backend: Auth Result
-    Backend-->>Frontend: Auth Response
-    Frontend-->>Browser: Login Success/Failure
-    Browser-->>User: Display Result
+    %% --- User Registration & Login ---
+    User ->> Web Browser: Access Registration/Login
+    Web Browser ->> Frontend Interface: Load Login Page
+    Frontend Interface -->> Web Browser: Display Login Form
+    User ->> Web Browser: Submit Credentials
+    Web Browser ->> Frontend Interface: Send Credentials
+    Frontend Interface ->> Backend Server: Validate Credentials
+    Backend Server ->> Database: Query User Data
+    Database -->> Backend Server: Return Validation Result
+    Backend Server -->> Frontend Interface: Auth Success/Failure
+    Frontend Interface -->> Web Browser: Show Login Result
 
-    %% Browsing Desserts
-    User->>Browser: Browse Desserts
-    Browser->>Frontend: Request Dessert Listings
-    Frontend->>Backend: API Request for Desserts
-    Backend->>Database: Fetch Dessert Data
-    Database-->>Backend: Dessert Data
-    Backend-->>Frontend: Send Listings
-    Frontend-->>Browser: Display Desserts
-    Browser-->>User: Show Dessert Catalog
+    %% --- Browsing Desserts ---
+    User ->> Web Browser: Browse Desserts
+    Web Browser ->> Frontend Interface: Request Dessert Listings
+    Frontend Interface ->> Backend Server: API Request for Desserts
+    Backend Server ->> Database: Fetch Dessert Data
+    Database -->> Backend Server: Return Dessert Data
+    Backend Server -->> Frontend Interface: Send Listings
+    Frontend Interface -->> Web Browser: Display Desserts
 
-    %% Placing an Order (Simplified)
-    User->>Browser: Select Dessert
-    Browser->>Frontend: Add to Cart
-    Frontend->>Backend: Submit Order
-    Backend->>Database: Verify Inventory
-    Database-->>Backend: Stock Status
-    Backend-->>Frontend: Order Confirmation
-    Frontend-->>Browser: Show Receipt
-    Browser-->>User: Order Complete
+    %% --- Admin Login & Management ---
+    Admin ->> Web Browser: Login to Admin Panel
+    Web Browser ->> Frontend Interface: Send Admin Credentials
+    Frontend Interface ->> Backend Server: Validate Admin
+    Backend Server ->> Database: Verify Admin Rights
+    Database -->> Backend Server: Auth Result
+    Backend Server -->> Frontend Interface: Return Admin Access
+    Frontend Interface -->> Web Browser: Load Admin Dashboard
+
+    %% --- Add to Cart & Checkout ---
+    User ->> Web Browser: Add to Cart & Checkout
+    Web Browser ->> Frontend Interface: Submit Order
+    Frontend Interface ->> Backend Server: Process Order
+    Backend Server ->> Database: Store Order Details
+    Database -->> Backend Server: Confirm Storage
+    Backend Server -->> Frontend Interface: Order Confirmation
+    Frontend Interface -->> Web Browser: Display Confirmation
+
+    %% --- View Order History ---
+    User ->> Web Browser: View Order History
+    Web Browser ->> Frontend Interface: Request Orders
+    Frontend Interface ->> Backend Server: Query Order History
+    Backend Server ->> Database: Fetch Past Orders
+    Database -->> Backend Server: Return Order Data
+    Backend Server -->> Frontend Interface: Send Order History
+    Frontend Interface -->> Web Browser: Display Orders
+
+    %% --- Submit Feedback ---
+    User ->> Web Browser: Submit Feedback
+    Web Browser ->> Frontend Interface: Send Feedback Data
+    Frontend Interface ->> Backend Server: Store Feedback
+    Backend Server ->> Database: Save Feedback
+    Database -->> Backend Server: Confirm Storage
+    Backend Server -->> Frontend Interface: Feedback Saved
+    Frontend Interface -->> Web Browser: Show Success Message
 ```
 
 ## 6. REFERENCE
