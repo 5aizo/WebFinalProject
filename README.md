@@ -176,6 +176,12 @@ sequenceDiagram
 
 ## 6. REFERENCE
 
+Markdownguide.org. (n.d.). Basic syntax. Markdown Guide. https://www.markdownguide.org/basic-syntax/
+
+Swimm. (n.d.). Mermaid.js: A complete guide. Swimm. https://swimm.io/learn/mermaid-js/mermaid-js-a-complete-guide
+
+
+
 
 
 
