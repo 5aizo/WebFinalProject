@@ -183,18 +183,23 @@ Swimm. (n.d.). Mermaid.js: A complete guide. Swimm. https://swimm.io/learn/merma
 ## 7. SCREENSHOT OF WEBSITE
 
 ## ❖ Homepage
+This is BiteBarakah's Homepage. It launches the website by introducing it as a Shariah-compliant dessert ordering web application that brings together sweetness and blessings in every bite. The homepage has a welcoming greeting, a brief overview of the services offered, and a colorful image of a dessert, creating a good first impression. There is a top navigation bar with links to various sections such as Home, About, Desserts, Events, Order, Contact, and Admin Panel, with Logout for user account administration.
 ![Logo](Images/HP.jpg)
 
 ## ❖ Product page (Malay Desserts)
+Malay desserts like Ondeh-Ondeh and Kuih Lapis are showcased, along with cute, chilled, and other dessert categories, each described in terms of ingredients and mostly billed at RM2.50 per item.
 ![Logo](Images/DP.jpg)
 
 ## ❖ Product page (Cute Desserts)
+Serves cooling treats like Chocolate Ice Cream (RM4.00), Sago Gula Melaka (RM3.50), and Mango Pudding (RM3.50) that are perfect for cooling down with fruity or creamy delights.
 ![Logo](Images/DP2.jpg)
 
 ## ❖ Order page
+In this page, users are able to order desserts by filling out a form with their name, email, dessert type, specific dessert, and quantity. Upon filling out the form, users can click on the green "Place Order" button to submit their order.
 ![Logo](Images/OP.jpg)
 
 ## ❖ Admin page
+The admin panel allows you to view customer orders, search by name, and download the orders in PDF. Recent customer orders lists will be here, showing details like dessert type, quantity, and order time.
 ![Logo](Images/AP.jpg)
 
 ## 8. CHALLENGES
