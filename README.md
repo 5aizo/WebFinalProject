@@ -1,5 +1,5 @@
 # BiteBarakah - Halal Online Dessert Ordering System
-## Laravel MVC Web Application Proposal
+## Laravel MVC Web Application Proposal And Final Report
 
 ## Group Members
 
@@ -180,25 +180,35 @@ Markdownguide.org. (n.d.). Basic syntax. Markdown Guide. https://www.markdowngui
 
 Swimm. (n.d.). Mermaid.js: A complete guide. Swimm. https://swimm.io/learn/mermaid-js/mermaid-js-a-complete-guide
 
-## 7. Challenges
+## 7. SCREENSHOT OF WEBSITE
 
-1. Merge Conflicts: Multiple team members working on the same files can lead to overlapping changes that require manual resolution, causing delays and potential errors.
+## ❖ Homepage
+![Logo](Images/HP.jpg)
 
+## ❖ Product page (Malay Desserts)
+![Logo](Images/DP.jpg)
 
+## ❖ Product page (Cute Desserts)
+![Logo](Images/DP2.jpg)
 
-2. Lack of Version Control Discipline: Inconsistent commitment practices, unclear commit messages, or a lack of understanding of Git basics can result in a messy repository history, making it difficult to track changes or revert to previous versions.
+## ❖ Order page
+![Logo](Images/OP.jpg)
 
+## ❖ Admin page
+![Logo](Images/AP.jpg)
 
+## 8. CHALLENGES
 
-3. Ineffective Code Reviews: If code reviews are not thorough, timely, or constructive, it can lead to lower code quality, missed bugs, and slow development cycles.
+❖ Merge Conflicts: Multiple team members working on the same files can lead to overlapping changes that require manual resolution, causing delays and potential errors.
 
+❖ Lack of Version Control Discipline: Inconsistent commitment practices, unclear commit messages, or a lack of understanding of Git basics can result in a messy repository history, making it difficult to track changes or revert to previous versions.
 
+❖ Ineffective Code Reviews: If code reviews are not thorough, timely, or constructive, it can lead to lower code quality, missed bugs, and slow development cycles.
 
-4. Branch Management Complexity: Without a clear and agreed-upon branching strategy, managing numerous feature, hotfix, or release branches can become confusing and lead to incorrect merges.
+❖ Branch Management Complexity: Without a clear and agreed-upon branching strategy, managing numerous feature, hotfix, or release branches can become confusing and lead to incorrect merges.
 
+❖ Lack of Communication: Poor communication regarding ongoing tasks, planned features, or resolved issues can lead to duplicated efforts, unexpected conflicts, and team members working with outdated information.
 
-
-5. Lack of Communication: Poor communication regarding ongoing tasks, planned features, or resolved issues can lead to duplicated efforts, unexpected conflicts, and team members working with outdated information.
 
 
 
