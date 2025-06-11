@@ -209,6 +209,9 @@ Swimm. (n.d.). Mermaid.js: A complete guide. Swimm. https://swimm.io/learn/merma
 
 ❖ Lack of Communication: Poor communication regarding ongoing tasks, planned features, or resolved issues can lead to duplicated efforts, unexpected conflicts, and team members working with outdated information.
 
+## 9. OUR LAVAREL CODE
+Visit [Bitebarakah](Visit [Repo B](https://github.com/5aizo/bitebarakah2)
+
 
 
 
