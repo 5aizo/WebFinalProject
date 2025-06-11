@@ -180,6 +180,29 @@ Markdownguide.org. (n.d.). Basic syntax. Markdown Guide. https://www.markdowngui
 
 Swimm. (n.d.). Mermaid.js: A complete guide. Swimm. https://swimm.io/learn/mermaid-js/mermaid-js-a-complete-guide
 
+## 7. Challenges
+
+1. Merge Conflicts: Multiple team members working on the same files can lead to overlapping changes that require manual resolution, causing delays and potential errors.
+
+
+
+2. Lack of Version Control Discipline: Inconsistent commitment practices, unclear commit messages, or a lack of understanding of Git basics can result in a messy repository history, making it difficult to track changes or revert to previous versions.
+
+
+
+3. Ineffective Code Reviews: If code reviews are not thorough, timely, or constructive, it can lead to lower code quality, missed bugs, and slow development cycles.
+
+
+
+4. Branch Management Complexity: Without a clear and agreed-upon branching strategy, managing numerous feature, hotfix, or release branches can become confusing and lead to incorrect merges.
+
+
+
+5. Lack of Communication: Poor communication regarding ongoing tasks, planned features, or resolved issues can lead to duplicated efforts, unexpected conflicts, and team members working with outdated information.
+
+
+
+
 
 
 
